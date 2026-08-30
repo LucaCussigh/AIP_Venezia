@@ -8,12 +8,10 @@ title: From Face Perception to Social Categorization: Multidimensional Scaling A
 
 Luca Cussigh, Luciana Carraro, Luigi Castelli
 
-  <a href="https://LucaCussigh.github.io/AIP_Venezia/mds-interactive.html" target="_blank">3D MDS visualization</a>
-
-<div align="center" style="margin-top: 100px;">
-	<img src="Images/Marchio_unipd2026.svg" alt="Università degli Studi di Padova" height="100">
-	&nbsp;&nbsp;&nbsp;&nbsp;
-	<img src="Images/logo-dpps_nobground.png" alt="Department of Developmental Psychology and Socialisation" height="100">
+<div align="center" style="margin-top: 72px; white-space: nowrap;">
+	<img src="Images/Marchio_unipd2026.svg" alt="Università degli Studi di Padova" height="60">
+	&nbsp;&nbsp;
+	<img src="Images/logo-dpps_nobground.png" alt="Department of Developmental Psychology and Socialisation" height="60">
 </div>
 
 ---
