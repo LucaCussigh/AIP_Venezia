@@ -354,3 +354,10 @@ To wrap up: Our results paint a more nuanced picture of how children perceive et
 ---
 
 # Questions? 🫰​
+
+<div align="center">
+
+<img src="Images/qr_code.png" alt="Minority-groups homogeneity effect" width="700">
+
+</div>
+
