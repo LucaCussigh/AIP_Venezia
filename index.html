@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Face Perception and Social Categorization</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/lib/marked.umd.min.js"></script>
   <style>
     :root {
@@ -21,7 +24,7 @@
       margin: 0;
       color: var(--ink);
       background: var(--paper);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Source Sans 3", sans-serif;
     }
 
     main {
@@ -44,16 +47,15 @@
     #slide h1, #slide h2 {
       max-width: 1100px;
       margin: 0 0 0.65em;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-family: "DM Serif Display", Georgia, serif;
       font-weight: 400;
       letter-spacing: 0;
-      line-height: 1.04;
-      text-transform: uppercase;
+      line-height: 1.12;
     }
 
-    #slide h1 { font-size: clamp(2.25rem, 5vw, 5.4rem); }
-    #slide h2 { font-size: clamp(1.8rem, 4vw, 4rem); }
-    #slide p, #slide li { font-size: clamp(1.15rem, 2.1vw, 2rem); line-height: 1.35; }
+    #slide h1 { font-size: clamp(2rem, 4vw, 4.25rem); }
+    #slide h2 { font-size: clamp(1.65rem, 3vw, 3.1rem); }
+    #slide p, #slide li { font-size: clamp(1.1rem, 1.75vw, 1.65rem); line-height: 1.4; }
     #slide ul { max-width: 1080px; margin: 0.4em 0; padding-left: 1.1em; }
     #slide li::marker { color: var(--accent); }
     #slide strong { color: var(--accent-dark); }
