@@ -88,23 +88,6 @@
     .controls button:disabled { opacity: 0.35; cursor: default; }
     #counter { min-width: 5rem; text-align: center; }
 
-    #notes {
-      position: fixed;
-      z-index: 2;
-      right: 22px;
-      bottom: 82px;
-      width: min(480px, calc(100vw - 44px));
-      max-height: 55vh;
-      overflow: auto;
-      padding: 18px 20px;
-      border: 1px solid #d8bf78;
-      border-radius: 4px;
-      background: var(--note);
-      box-shadow: 0 10px 28px rgb(19 35 31 / 18%);
-      font: 1rem/1.45 Arial, sans-serif;
-    }
-
-    #notes[hidden] { display: none; }
     #error { color: var(--accent-dark); font: 1.1rem Arial, sans-serif; }
 
     @media (max-width: 720px) {
@@ -121,29 +104,31 @@
     <nav class="controls" aria-label="Presentation controls">
       <button id="previous" type="button" title="Previous slide" aria-label="Previous slide">&#8592;</button>
       <span id="counter"></span>
-      <button id="notes-toggle" type="button" title="Toggle speaker notes" aria-label="Toggle speaker notes">N</button>
       <button id="next" type="button" title="Next slide" aria-label="Next slide">&#8594;</button>
     </nav>
   </main>
-  <aside id="notes" hidden aria-live="polite"></aside>
 
   <script>
     const slideElement = document.querySelector('#slide');
-    const notesElement = document.querySelector('#notes');
     const previousButton = document.querySelector('#previous');
     const nextButton = document.querySelector('#next');
-    const notesButton = document.querySelector('#notes-toggle');
     const counterElement = document.querySelector('#counter');
     let slides = [];
     let currentSlide = 0;
 
-    function getNotes(markdown) {
-      const match = markdown.match(/<!--\s*Speaker Notes\s*([\s\S]*?)-->/i);
-      return match ? match[1].trim() : '';
-    }
-
     function withoutNotes(markdown) {
-      return markdown.replace(/<!--\s*Speaker Notes\s*[\s\S]*?-->/gi, '').trim();
+      let depth = 0;
+      const visibleLines = [];
+
+      for (const line of markdown.split(/\r?\n/)) {
+        const openings = (line.match(/<!--/g) || []).length;
+        const closings = (line.match(/-->/g) || []).length;
+
+        if (depth === 0 && openings === 0) visibleLines.push(line);
+        depth = Math.max(0, depth + openings - closings);
+      }
+
+      return visibleLines.join('\n').trim();
     }
 
     function renderSlide() {
@@ -153,8 +138,6 @@
         ? '<h1>MDS</h1><iframe src="mds-interactive.html" title="Interactive 3D MDS visualization"></iframe>'
         : marked.parse(withoutNotes(source), { gfm: true, breaks: true });
 
-      const notes = getNotes(source);
-      notesElement.textContent = notes || 'No speaker notes for this slide.';
       counterElement.textContent = `${currentSlide + 1} / ${slides.length}`;
       previousButton.disabled = currentSlide === 0;
       nextButton.disabled = currentSlide === slides.length - 1;
@@ -168,12 +151,10 @@
 
     previousButton.addEventListener('click', () => goToSlide(currentSlide - 1));
     nextButton.addEventListener('click', () => goToSlide(currentSlide + 1));
-    notesButton.addEventListener('click', () => { notesElement.hidden = !notesElement.hidden; });
 
     document.addEventListener('keydown', (event) => {
       if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') goToSlide(currentSlide + 1);
       if (event.key === 'ArrowLeft' || event.key === 'PageUp') goToSlide(currentSlide - 1);
-      if (event.key.toLowerCase() === 'n') notesElement.hidden = !notesElement.hidden;
     });
 
     fetch('presentation.md')
