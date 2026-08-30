@@ -139,7 +139,7 @@ Our approach is grounded in Face-Space Theory, which represents faces not as cat
 
 **Sample:**
 - Study 1: N=249 (moderated, controlled lab setting)
-- Study 2: N=101 (unmoderated, online validation)
+- Study 2: N=101 (unmoderated, online setting)
 - Age range: 3 to 8 years
 <!--
 ---
