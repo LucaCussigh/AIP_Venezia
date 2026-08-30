@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Face Perception and Social Categorization</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/lib/marked.umd.min.js"></script>
+  <style>
+    :root {
+      --ink: #13231f;
+      --paper: #f6f4ee;
+      --accent: #b7492e;
+      --accent-dark: #82351f;
+      --line: #d7d1c5;
+      --note: #fff4d6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    main {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: clamp(24px, 4vw, 64px);
+    }
+
+    #slide {
+      width: min(1280px, 100%);
+      min-height: min(720px, calc(100vh - 180px));
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: auto;
+    }
+
+    #slide h1, #slide h2 {
+      max-width: 1100px;
+      margin: 0 0 0.65em;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.04;
+      text-transform: uppercase;
+    }
+
+    #slide h1 { font-size: clamp(2.25rem, 5vw, 5.4rem); }
+    #slide h2 { font-size: clamp(1.8rem, 4vw, 4rem); }
+    #slide p, #slide li { font-size: clamp(1.15rem, 2.1vw, 2rem); line-height: 1.35; }
+    #slide ul { max-width: 1080px; margin: 0.4em 0; padding-left: 1.1em; }
+    #slide li::marker { color: var(--accent); }
+    #slide strong { color: var(--accent-dark); }
+    #slide table { width: auto; max-width: 100%; margin: 0.8rem auto; border-collapse: collapse; }
+    #slide th, #slide td { padding: 0.25rem 0.75rem; text-align: center; }
+    #slide img { max-width: 100%; height: auto; }
+    #slide iframe { width: 100%; height: min(68vh, 650px); border: 1px solid var(--line); background: white; }
+
+    .controls {
+      width: min(1280px, 100%);
+      margin: 24px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-family: Arial, sans-serif;
+      color: #52625d;
+    }
+
+    .controls button {
+      width: 44px;
+      height: 40px;
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+      color: var(--paper);
+      background: var(--ink);
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+
+    .controls button:hover, .controls button:focus-visible { background: var(--accent); }
+    .controls button:disabled { opacity: 0.35; cursor: default; }
+    #counter { min-width: 5rem; text-align: center; }
+
+    #notes {
+      position: fixed;
+      z-index: 2;
+      right: 22px;
+      bottom: 82px;
+      width: min(480px, calc(100vw - 44px));
+      max-height: 55vh;
+      overflow: auto;
+      padding: 18px 20px;
+      border: 1px solid #d8bf78;
+      border-radius: 4px;
+      background: var(--note);
+      box-shadow: 0 10px 28px rgb(19 35 31 / 18%);
+      font: 1rem/1.45 Arial, sans-serif;
+    }
+
+    #notes[hidden] { display: none; }
+    #error { color: var(--accent-dark); font: 1.1rem Arial, sans-serif; }
+
+    @media (max-width: 720px) {
+      main { padding: 24px 18px; }
+      #slide { min-height: calc(100vh - 130px); }
+      #slide th, #slide td { padding: 0.15rem; }
+      #slide table img { max-width: 22vw; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article id="slide" aria-live="polite"></article>
+    <nav class="controls" aria-label="Presentation controls">
+      <button id="previous" type="button" title="Previous slide" aria-label="Previous slide">&#8592;</button>
+      <span id="counter"></span>
+      <button id="notes-toggle" type="button" title="Toggle speaker notes" aria-label="Toggle speaker notes">N</button>
+      <button id="next" type="button" title="Next slide" aria-label="Next slide">&#8594;</button>
+    </nav>
+  </main>
+  <aside id="notes" hidden aria-live="polite"></aside>
+
+  <script>
+    const slideElement = document.querySelector('#slide');
+    const notesElement = document.querySelector('#notes');
+    const previousButton = document.querySelector('#previous');
+    const nextButton = document.querySelector('#next');
+    const notesButton = document.querySelector('#notes-toggle');
+    const counterElement = document.querySelector('#counter');
+    let slides = [];
+    let currentSlide = 0;
+
+    function getNotes(markdown) {
+      const match = markdown.match(/<!--\s*Speaker Notes\s*([\s\S]*?)-->/i);
+      return match ? match[1].trim() : '';
+    }
+
+    function withoutNotes(markdown) {
+      return markdown.replace(/<!--\s*Speaker Notes\s*[\s\S]*?-->/gi, '').trim();
+    }
+
+    function renderSlide() {
+      const source = slides[currentSlide];
+      const isMdsSlide = /^#\s*MDS\s*$/im.test(withoutNotes(source));
+      slideElement.innerHTML = isMdsSlide
+        ? '<h1>MDS</h1><iframe src="mds-interactive.html" title="Interactive 3D MDS visualization"></iframe>'
+        : marked.parse(withoutNotes(source), { gfm: true, breaks: true });
+
+      const notes = getNotes(source);
+      notesElement.textContent = notes || 'No speaker notes for this slide.';
+      counterElement.textContent = `${currentSlide + 1} / ${slides.length}`;
+      previousButton.disabled = currentSlide === 0;
+      nextButton.disabled = currentSlide === slides.length - 1;
+      window.location.hash = `slide-${currentSlide + 1}`;
+    }
+
+    function goToSlide(index) {
+      currentSlide = Math.max(0, Math.min(index, slides.length - 1));
+      renderSlide();
+    }
+
+    previousButton.addEventListener('click', () => goToSlide(currentSlide - 1));
+    nextButton.addEventListener('click', () => goToSlide(currentSlide + 1));
+    notesButton.addEventListener('click', () => { notesElement.hidden = !notesElement.hidden; });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') goToSlide(currentSlide + 1);
+      if (event.key === 'ArrowLeft' || event.key === 'PageUp') goToSlide(currentSlide - 1);
+      if (event.key.toLowerCase() === 'n') notesElement.hidden = !notesElement.hidden;
+    });
+
+    fetch('presentation.md')
+      .then((response) => {
+        if (!response.ok) throw new Error(`Unable to load presentation.md (${response.status})`);
+        return response.text();
+      })
+      .then((markdown) => {
+        const withoutFrontmatter = markdown.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
+        slides = withoutFrontmatter.split(/\r?\n---\r?\n/).map((slide) => slide.trim()).filter(Boolean);
+        const requestedSlide = Number(window.location.hash.replace('#slide-', ''));
+        currentSlide = Number.isInteger(requestedSlide) && requestedSlide > 0 ? requestedSlide - 1 : 0;
+        renderSlide();
+      })
+      .catch((error) => {
+        slideElement.innerHTML = `<p id="error">${error.message}</p>`;
+      });
+  </script>
+</body>
+</html>
