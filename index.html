@@ -117,18 +117,7 @@
     let currentSlide = 0;
 
     function withoutNotes(markdown) {
-      let depth = 0;
-      const visibleLines = [];
-
-      for (const line of markdown.split(/\r?\n/)) {
-        const openings = (line.match(/<!--/g) || []).length;
-        const closings = (line.match(/-->/g) || []).length;
-
-        if (depth === 0 && openings === 0) visibleLines.push(line);
-        depth = Math.max(0, depth + openings - closings);
-      }
-
-      return visibleLines.join('\n').trim();
+      return markdown.replace(/<!--[\s\S]*?-->/g, '').trim();
     }
 
     function renderSlide() {
@@ -164,7 +153,8 @@
       })
       .then((markdown) => {
         const withoutFrontmatter = markdown.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
-        slides = withoutFrontmatter.split(/\r?\n---\r?\n/).map((slide) => slide.trim()).filter(Boolean);
+        const publicMarkdown = withoutNotes(withoutFrontmatter);
+        slides = publicMarkdown.split(/\r?\n---\r?\n/).map((slide) => slide.trim()).filter(Boolean);
         const requestedSlide = Number(window.location.hash.replace('#slide-', ''));
         currentSlide = Number.isInteger(requestedSlide) && requestedSlide > 0 ? requestedSlide - 1 : 0;
         renderSlide();
