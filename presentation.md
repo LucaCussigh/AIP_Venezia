@@ -207,7 +207,7 @@ To keep young children engaged without explicitly mentioning ethnicity—which c
 # MDS
 
 <p align="center">
-	<a href="mds-interactive.html" target="_blank"> 3D MDS visualization</a>
+  <a href="https://lucacussigh.github.io/AIP_Venezia/mds-interactive.html" target="_blank">3D MDS visualization</a>
 </p>
 
 <!--
