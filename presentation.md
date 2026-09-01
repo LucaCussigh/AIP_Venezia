@@ -4,7 +4,7 @@ html: true
 title: From Face Perception to Social Categorization: Multidimensional Scaling Approach to Ethnic Outgroup Homogeneity in Childhood
 ---
 
-# From Face Perception to Social Categorization: Multidimensional Scaling Approach to Ethnic Outgroup Homogeneity in Childhood
+# From Face Perception to Social Categorization: A Multidimensional Scaling Approach to Ethnic Outgroup Homogeneity in Childhood
 
 Luca Cussigh, Luciana Carraro, Luigi Castelli
 
@@ -16,181 +16,66 @@ Luca Cussigh, Luciana Carraro, Luigi Castelli
 
 ---
 
-"In 2023, Member States issued more than 3.7 million residence permits to non-EU citizens from more than 170 countries."
+# The Outgroup Homogeneity Effect
+Outgroup members appear more homogeneous to each other than ingroup members
 
-https://www.europarl.europa.eu/doceo/document/E-10-2025-000294-ASW_EN.html
-
----
-
-"The study on fiscal impact of migration is a Science for Policy report by the Joint Research Centre, which provides evidence-based scientific support to the European policymaking process. [...] <br>
-The study also finds that removing obstacles to the full labour market integration of migrants can produce considerable positive fiscal benefits for hosting countries in the future."
-<br>https://www.europarl.europa.eu/doceo/document/E-10-2025-002052-ASW_EN.html
+- Supported in adult populations
 
 ---
 
-# Categorization's effects
+# The Outgroup Homogeneity Effect
 
-- Social categorization changes how people perceive, evaluate, remember, and treat one another (Amodio & Cikara, 2021; Levy et al., 2023; Rhodes & Baron, 2019)
+**Early Emergence of Categorization vs. Childhood OHE Gap**
 
-<!--
-"Social categorization can help children simplify and understand their social environment but has detrimental consequences in the forms of stereotyping, prejudice, and discrimination." - pervasive phenomenon
+- **In infancy:** Strong evidence for ingroup preferences and visual specialization for ingroup faces (Kelly et al., 2009; Quinn et al., 2016).
+- **In childhood:** No consolidated evidence for the Outgroup Homogeneity Effect (OHE). Why?
+
+---
+
+# A few structural obstacles
+1. Using a explicit tasks it is difficult not to create top-down categories
+2. Most of the literature employs a dyadic paradigm (ingroup-outgroup)
+3. If visual paradigms are used, the stimuli selection is subjected to biases
+
+<!-- Speaker Notes
+Decades of research show that infants display early visual specialization for ingroup faces, leading to the Perceptual-Social Linkage hypothesis. Yet, when we look at childhood, specifically ages 3 to 8, the evidence for the Outgroup Homogeneity Effect becomes inconsistent. We hypothesize that traditional tasks force children into rigid, explicit categories and may not capture how they spontaneously perceive social groups.
 -->
 
 ---
 
-# Why is social categorization a relevant phenomenon in childhood?
+# 1. Spontaneous bottom-up categorization
 
-- Early-emerging ingroup preferences documented in infants (e.g., Kelly et al., 2009; Woo et al., 2020)
-- Visual specialization for ingroup faces (Quinn et al., 2016)
-<!--
----
+**Multidimensional Scaling (MDS)**
 
-# The Perceptual-Social Linkage
-- Infants' visual experience → Later social biases (Lee et al., 2017; Perceptual-Social Linkage Hypothesis)
-- Foundation for downstream intergroup attitudes (Timeo et al., 2017)
-
- Speaker Notes
-Let's start with the theoretical foundation. Decades of research show that even infants display ingroup preferences—they look longer at faces of their own race. The Perceptual-Social Linkage Model, developed by Lee and colleagues, proposes that this early visual specialization—our brains becoming finely tuned to process faces we see frequently—has lasting social consequences. The more familiar a face category becomes, the more we perceive it as internally similar and different from outgroups. This early perceptual bias can cascade into social stereotyping and prejudice.
-
+- Face-Space Theory (Valentine et al., 2016): Faces exist in a continuous multidimensional perceptual space
+- **Goal**: Visually map whether faces from different ethnic groups are spontaneously perceived as more similar to one another (OHE), and how this changes across age groups.
 
 ---
 
-Judd & Park (1988) **→** "two different effects of in-group versus out-group status have been discussed and documented."
--->
----
+# 2. Multi-group context
 
-# The Outgroup Homogeneity Effect (OHE; Quattrone & Jones, 1981)
-
-- Outgroup faces appear more homogeneous to each other than ingroup faces
+- 4-group context: Italian majority-ingroup + 3 distinct ethnic minority-outgroups (African Descent, East Asian, Andean)
+- 20 faces per gender group (5 per ethnic group)
 
 ---
 
-# The Outgroup Homogeneity Effect <br> (with Fantastic Mr.Fox)
+# 3. The AI generated-stimuli
 
+- Morphologies controlled using an emotional filter and FaceNet embeddings to ensure perceptual distinctiveness
 
 <div style="display: flex; justify-content: center;">
 
-| **In-group** | **Outgroup Beans** | **Outgroup Boggins** | **Outgroup Bunce** |
-|:---:|:---:|:---:|:---:|
-| <img src="Images/Pres_politica_base.png" alt="In-group" width="250" height="250"> | <img src="Images/Pres_politica_3.png" alt="Outgroup Beans" width="250" height="250"> | <img src="Images/Pres_politica_2.png" alt="Outgroup Boggins" width="250" height="250"> | <img src="Images/Pres_politica_1.png" alt="Outgroup Bunce" width="250" height="250"> |
+| African Descent | East-Asian | Italian | **Andean** |
+|:---:|:---:|:---:| :---:|
+| <img src="Images/Immagine1.png" alt="In-group" width="800" height="250"> | <img src="Images/Immagine2.png" alt="Outgroup Beans" width="800" height="250"> | <img src="Images/Immagine3.png" alt="Outgroup Boggins" width="800" height="250"> | <img src="Images/Immagine4.png" alt="Outgroup Boggins" width="800" height="250"> |
 
 </div>
 
----
 
-# Minority-groups homogeneity effect (Tepper & Gilovich, 2025)
-
-- In a multigroup scenario
-- Majority members see different minority outgroups as MORE similar to each other
-
----
-
-# Minority-groups homogeneity effect <br> (with Fantastic Mr.Fox)
-
-<div align="center">
-
-<img src="Images/Pres_politica_4.png" alt="Minority-groups homogeneity effect" width="420">
-
-</div>
-
----
-
-# The Multigroup Context 
-
-**In children, the situation is slightly different:**
-- No formal position consolidated
-- Multigroup paradigms are not employed, even though they are more ecologically valid
-- **Gap:** We do not know how children categorize faces in a multigroup environment
-
-<!-- Speaker Notes
-
--->
-
----
-
-**Research Question:**
-- How is the multiethnic perceptual space structured in childhood? Does it support homogeneity theories?
-- Does ethnic categorization change across development?
-
-<!--
-
----
-
-*How to study this effect in a multigroup system with a children population?* 
-
-*How to represent a dynamic representation?*
-
-
----
-
-# Study Framework
-
-**Theoretical Shift: From Norm-Based to Exemplar Models**
-- Face-Space Theory (Valentine et al., 2016): Faces exist in a continuous multidimensional perceptual space
-- Exemplar-based model
-
-<!-- Speaker Notes
-Our approach is grounded in Face-Space Theory, which represents faces not as categories but as points in a multidimensional space. Distance in this space reflects perceived similarity. This framework allows us to move beyond simple categorization and examine how multiple groups are positioned relative to each other—capturing the nuances of multigroup contexts. Traditional methods force children into binary choices, but we wanted to measure the entire relational structure of perceived similarity.
--->
-
----
-
-# Pre-registered studies: Method & Experimental Design
-
-**Sample:**
-- Study 1: N=249 (moderated, controlled lab setting)
-- Study 2: N=101 (unmoderated, online setting)
-- Age range: 3 to 8 years
-<!--
----
-
-# Pre-registered studies: Method & Experimental Design
-
-**Stimuli: AI-Generated Faces**
-- 20 faces per participant group (5 per ethnic group)
-- Groups: Italian (ingroup), African Descent, East Asian, Andean
-- Morphologies controlled using an emotional filter and FaceNet embeddings to ensure perceptual distinctiveness
 <br>
 
- Speaker Notes
-We recruited over 350 children across two independent studies—one in a moderated lab setting with trained experimenters, the other online to test whether effects replicate beyond the lab. We used AI-generated faces to ensure strict control over facial features while maintaining naturalness. All faces were validated using FaceNet, a deep learning model trained on human face recognition, to ensure they were perceptually distinct and representative of their intended ethnic categories. The dual-study design allows us to examine whether the perceptual structures we find are robust or dependent on testing context.
-
-
 ---
 
-# The Gamified Task
-
-**Engagement Without Explicit Categorization:**
-- Narrative: "Oscar the meerkat" task (no explicit ethnic labels)
-- Children evaluate face pairs without social priming
--->
-
----
-# Multidimensional scaling (MDS)
-
-**Expanding the Scope**
-- 4-group context: Italian ingroup + 3 distinct ethnic outgroups 
-- Relational focus: Facial dyads rather than isolated face evaluation
-- Continuous similarity judgments (0-3 scale) instead of binary choices
-
-
-<!-- Speaker Notes
-To address this gap, we employed Multidimensional Scaling—a statistical technique that constructs a spatial map from similarity judgments. Each group becomes a cloud of points in this space; the more compact the cloud, the more homogeneous the group appears. The key innovation is applying this method developmentally across ages 3 to 8, which requires a child-friendly task. We also expanded to a 4-group context, examining not just ingroup versus outgroup, but how multiple minority groups relate to each other and the ingroup.
--->
-
----
-
-
-
-**Face Similarity Task Protocol:**
-- Incomplete block design 
-- 66 random dyads presented sequentially
-
-<!-- Speaker Notes
-To keep young children engaged without explicitly mentioning ethnicity—which could introduce demand characteristics—we embedded the task in a playful narrative. Oscar the meerkat guides children through pairs of faces. Children simply indicate how similar each pair looks using a straightforward 0-to-3 scale with visual anchors. This approach maintains ecological validity while reducing cognitive load. The randomized dyad sampling ensures children evaluate both within-group and between-group comparisons without pattern detection.
--->
-
----
 # The Face Similarity Task
 
 <div style="display: flex; justify-content: center;">
@@ -201,6 +86,44 @@ To keep young children engaged without explicitly mentioning ethnicity—which c
 |800ms|1000ms|//|
 
 </div>
+
+
+---
+
+# The Face Similarity Task
+
+- Incomplete block design 
+- 66 random dyads presented sequentially (3 faces per group)
+
+<div style="display: flex; justify-content: center;">
+
+| **Moderated (S1)** |
+|:---:|
+| <img src="Images/03_Heatmap_Females.png" alt="In-group" width="500" height="350"> |
+
+</div>
+
+---
+
+# Pre-registered studies: Method & Experimental Design
+
+**Sample:**
+- Study 1 (moderated, controlled school setting): N=249, M=5.17 years, SD=1.23, 134 boys (53.8%) and 115 girls (46.2%)
+- Study 2 (unmoderated, online setting): N=101, M = 6.06, SD=1.43, 52 girls (51.5%) and 49 boys (48.5%)
+- Age range: 3 to 8 years
+<!--
+---
+
+# Pre-registered studies: Method & Experimental Design
+
+---
+
+# The Gamified Task
+
+**Engagement Without Explicit Categorization:**
+- Narrative: "Oscar the meerkat" task (no explicit ethnic labels)
+- Children evaluate face pairs without social priming
+-->
 
 ---
 
@@ -230,9 +153,26 @@ Structural Replicability (S1 vs S2)
 A critical question is whether these findings depend on the specific testing context. When we aligned the spatial maps from both studies using Procrustes analysis, they overlapped remarkably well. The Tucker congruence coefficients exceeded 0.93, which is well above the threshold for excellent agreement. Mantel tests confirmed that the rank-order distances between groups were consistent across contexts. This replication is crucial—it suggests that the perceptual structures we identified are genuine features of how children organize faces, not artifacts created by experimenter presence or online testing constraints.
 -->
 
+
+
 ---
 
 - # Children spontaneously visually categorize stimuli in ethnic groups
+
+---
+# Outgroup Homogenity Effect
+
+- Ellipsoid's volume: 
+
+<div style="display: flex; justify-content: center;">
+
+| **Moderated (S1)** |
+|:---:|
+| <img src="Images/Figure_Volume_3D_APA7.png" alt="In-group" width="500" height="350"> |
+
+</div>
+
+
 <!--
 ---
 <!--
@@ -301,13 +241,46 @@ Regarding the Minority-Groups Homogeneity Effect, we found it wasn't supported e
 
 ---
 
+# Outgroup Homogenity Effect
+
+- Ellipsoid's volume: 
+
+<div style="display: flex; justify-content: center;">
+
+| **Moderated (S1)** | **Unmoderated (S2)** | 
+|:---:|:---:|
+| <img src="Images/Figure_Volume_3D_APA7.png" alt="In-group" width="500" height="350"> | <img src="Images/06_Figure3_Volume_3D_APA7.png" alt="Outgroup Beans" width="500" height="350"> |
+
+</div>
+
+---
+
+# LMM - Developmental Trajectories
+
+---
+
 # LMM - Developmental Trajectories
 
 
 
-<div align="center">
+<div style="display: flex; justify-content: center;">
 
-<img src="Images/04_plot_interazione_macro_s1.png" alt="Minority-groups homogeneity effect" width="700">
+| **Moderated (S1)** |
+|:---:|
+| <img src="Images/04_plot_interazione_macro_s1.png" alt="In-group" width="500" height="350"> |
+
+</div>
+
+
+---
+
+# LMM - Developmental Trajectories
+
+<div style="display: flex; justify-content: center;">
+
+| **Moderated (S1)** | **Unmoderated (S2)** | 
+|:---:|:---:|
+| <img src="Images/04_plot_interazione_macro_s1.png" alt="In-group" width="500" height="350"> | <img src="Images/plot_interazione_h1c.png" alt="Outgroup Beans" width="500" height="350"> |
 
 </div>
 
@@ -362,4 +335,3 @@ To wrap up: Our results paint a more nuanced picture of how children perceive et
 <img src="Images/qr_code.png" alt="Minority-groups homogeneity effect" width="700">
 
 </div>
-
