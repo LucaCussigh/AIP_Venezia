@@ -15,8 +15,22 @@ Luca Cussigh, Luciana Carraro, Luigi Castelli
 </div>
 
 ---
+<!--
+"In 2023, Member States issued more than 3.7 million residence permits to non-EU
+citizens from more than 170 countries."
 
-# The Outgroup Homogeneity Effect
+https://www.europarl.europa.eu/doceo/document/E-10-2025-000294-ASW_EN.html
+
+---
+
+# Social Categorization
+
+Social categorization changes how people perceive, evaluate, remember, and treat
+one another (Amodio & Cikara, 2021; Levy et al., 2023; Rhodes & Baron, 2019)
+
+---
+-->
+# The Outgroup Homogeneity Effect (OHE; Quattrone & Jones, 1981)
 Outgroup members appear more homogeneous to each other than ingroup members
 
 - Supported in adult populations
@@ -27,15 +41,15 @@ Outgroup members appear more homogeneous to each other than ingroup members
 
 **Early Emergence of Categorization vs. Childhood OHE Gap**
 
-- **In infancy:** Strong evidence for ingroup preferences and visual specialization for ingroup faces (Kelly et al., 2009; Quinn et al., 2016).
-- **In childhood:** No consolidated evidence for the Outgroup Homogeneity Effect (OHE). Why?
+- **Categorization in childhood:** Strong evidence for ingroup preferences and visual specialization for ingroup faces (Kelly et al., 2009; Quinn et al., 2016).
+- **OHE in childhoood:** No consolidated evidence for the Outgroup Homogeneity Effect (OHE). Why?
 
 ---
 
 # A few structural obstacles
-1. Using a explicit tasks it is difficult not to create top-down categories
+1. Difficult not to employ explicit tasks (creating top-down categories)
 2. Most of the literature employs a dyadic paradigm (ingroup-outgroup)
-3. If visual paradigms are used, the stimuli selection is subjected to biases
+3. If visual paradigms are used, the stimuli selection is subject to biases
 
 <!-- Speaker Notes
 Decades of research show that infants display early visual specialization for ingroup faces, leading to the Perceptual-Social Linkage hypothesis. Yet, when we look at childhood, specifically ages 3 to 8, the evidence for the Outgroup Homogeneity Effect becomes inconsistent. We hypothesize that traditional tasks force children into rigid, explicit categories and may not capture how they spontaneously perceive social groups.
@@ -61,7 +75,7 @@ Decades of research show that infants display early visual specialization for in
 
 # 3. The AI generated-stimuli
 
-- Morphologies controlled using an emotional filter and FaceNet embeddings to ensure perceptual distinctiveness
+- Morphologies controlled using an emotional filter and FaceNet embeddings to ensure similar perceptual distinctiveness across groups
 
 <div style="display: flex; justify-content: center;">
 
@@ -152,8 +166,6 @@ Structural Replicability (S1 vs S2)
  Speaker Notes
 A critical question is whether these findings depend on the specific testing context. When we aligned the spatial maps from both studies using Procrustes analysis, they overlapped remarkably well. The Tucker congruence coefficients exceeded 0.93, which is well above the threshold for excellent agreement. Mantel tests confirmed that the rank-order distances between groups were consistent across contexts. This replication is crucial—it suggests that the perceptual structures we identified are genuine features of how children organize faces, not artifacts created by experimenter presence or online testing constraints.
 -->
-
-
 
 ---
 
@@ -268,9 +280,8 @@ Regarding the Minority-Groups Homogeneity Effect, we found it wasn't supported e
 | **Moderated (S1)** |
 |:---:|
 | <img src="Images/04_plot_interazione_macro_s1.png" alt="In-group" width="500" height="350"> |
-
+|  |
 </div>
-
 
 ---
 
@@ -280,19 +291,41 @@ Regarding the Minority-Groups Homogeneity Effect, we found it wasn't supported e
 
 | **Moderated (S1)** | **Unmoderated (S2)** | 
 |:---:|:---:|
-| <img src="Images/04_plot_interazione_macro_s1.png" alt="In-group" width="500" height="350"> | <img src="Images/plot_interazione_h1c.png" alt="Outgroup Beans" width="500" height="350"> |
+| <img src="Images/04_plot_interazione_macro_s1.png" alt="In-group" height="260"> | <img src="Images/plot_interazione_h1c.png" alt="Outgroup Beans" height="260"> |
 
 </div>
 
+<div style="width: 100%; margin-top: 4px; text-align: center;">
+<table style="display: inline-table; width: 82%; margin: 0; font-size: 0.50em; line-height: 1.1; text-align: center; border-collapse: collapse;">
+	<thead>
+		<tr>
+			<th style="padding: 3px 8px;">Dyad type</th>
+			<th style="padding: 3px 8px;"><em>b (S1)</em></th>
+			<th style="padding: 3px 8px;">95% CI (S1)</th>
+			<th style="padding: 3px 8px;"><em>b (S2)</em></th>
+			<th style="padding: 3px 8px;">95% CI (S2)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td style="padding: 3px 8px;">In-Out</td><td style="padding: 3px 8px;">0.06</td><td style="padding: 3px 8px;">0.02, 0.11</td><td style="padding: 3px 8px;">0.07</td><td style="padding: 3px 8px;">0.02, 0.12</td></tr>
+		<tr><td style="padding: 3px 8px;">Out1-Out2</td><td style="padding: 3px 8px;">0.08</td><td style="padding: 3px 8px;">0.04,0.12</td><td style="padding: 3px 8px;">0.07</td><td style="padding: 3px 8px;">0.02, 0.12</td></tr>
+		<tr><td style="padding: 3px 8px;">In-In</td><td style="padding: 3px 8px;">0.01</td><td style="padding: 3px 8px;">-0.06, 0.08</td><td style="padding: 3px 8px;">-0.10</td><td style="padding: 3px 8px;">-0.18, -0.02</td></tr>
+		<tr><td style="padding: 3px 8px;">Out-Out</td><td style="padding: 3px 8px;">-0.04</td><td style="padding: 3px 8px;">-0.09, 0.01</td><td style="padding: 3px 8px;">-0.05</td><td style="padding: 3px 8px;">-0.10, 0.01</td></tr>
+	</tbody>
+</table>
+</div>
 
 ---
 
-- # Perceptual expertise in discriminating different social groups increases with age
+- # Intergroup similarity judgments increased with age
 
 ---
 
-- # Perceptual expertise in discriminating different social groups increases with age
-- # Intergroup distinctions become more salient
+# Conclusion
+
+- ## Children spontaneously visually categorize stimuli in ethnic groups
+
+- ## Intergroup similarity judgments increased with age
 
 <!-- Speaker Notes
 When we tracked children across ages 3 to 8, a developmental pattern emerged. As children got older, faces from different groups seemed more dissimilar to them—the distances between intergroup dyads increased. For within-group pairs, we saw some evidence that ingroup faces became more tightly clustered with age, especially in Study 2, suggesting that children develop a more refined, consolidated representation of their own group's appearance. This developmental trajectory aligns with theories of perceptual expertise—as children become more experienced with faces, they become better at extracting the features that distinguish one group from another.
