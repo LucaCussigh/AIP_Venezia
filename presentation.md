@@ -147,6 +147,16 @@ Decades of research show that infants display early visual specialization for in
   <a href="https://lucacussigh.github.io/AIP_Venezia/mds-interactive.html" target="_blank">3D MDS visualization</a>
 </p>
 
+---
+
+<div style="display: flex; justify-content: center;">
+
+| **Moderated (S1)** |
+|:---:|
+| <img src="Images/Immagine5.png" alt="In-group" width="700" height="400"> |
+
+</div>
+
 <!--
 ---
 
@@ -280,7 +290,6 @@ Regarding the Minority-Groups Homogeneity Effect, we found it wasn't supported e
 | **Moderated (S1)** |
 |:---:|
 | <img src="Images/04_plot_interazione_macro_s1.png" alt="In-group" width="500" height="350"> |
-|  |
 </div>
 
 ---
