@@ -317,7 +317,7 @@ Regarding the Minority-Groups Homogeneity Effect, we found it wasn't supported e
 	</thead>
 	<tbody>
 		<tr><td style="padding: 3px 8px;">In-Out</td><td style="padding: 3px 8px;">0.06</td><td style="padding: 3px 8px;">0.02, 0.11</td><td style="padding: 3px 8px;">0.07</td><td style="padding: 3px 8px;">0.02, 0.12</td></tr>
-		<tr><td style="padding: 3px 8px;">Out1-Out2</td><td style="padding: 3px 8px;">0.08</td><td style="padding: 3px 8px;">0.04,0.12</td><td style="padding: 3px 8px;">0.07</td><td style="padding: 3px 8px;">0.02, 0.12</td></tr>
+		<tr><td style="padding: 3px 8px;">Out1-Out2</td><td style="padding: 3px 8px;">0.08</td><td style="padding: 3px 8px;">0.04, 0.12</td><td style="padding: 3px 8px;">0.07</td><td style="padding: 3px 8px;">0.02, 0.12</td></tr>
 		<tr><td style="padding: 3px 8px;">In-In</td><td style="padding: 3px 8px;">0.01</td><td style="padding: 3px 8px;">-0.06, 0.08</td><td style="padding: 3px 8px;">-0.10</td><td style="padding: 3px 8px;">-0.18, -0.02</td></tr>
 		<tr><td style="padding: 3px 8px;">Out-Out</td><td style="padding: 3px 8px;">-0.04</td><td style="padding: 3px 8px;">-0.09, 0.01</td><td style="padding: 3px 8px;">-0.05</td><td style="padding: 3px 8px;">-0.10, 0.01</td></tr>
 	</tbody>
