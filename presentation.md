@@ -1,21 +1,46 @@
 ---
 marp: true
 html: true
-title: From Face Perception to Social Categorization: Multidimensional Scaling Approach to Ethnic Outgroup Homogeneity in Childhood
+title: Dai volti ai gruppi: una mappatura multidimensionale della rappresentazione percettiva dei gruppi sociali nell'infanzia
+
+style: |
+	section .centered-table {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	section .centered-table > table {
+		display: table !important;
+		width: auto !important;
+		max-width: 100%;
+		margin-left: 50% !important;
+		margin-right: 0 !important;
+		transform: translateX(-50%);
+	}
+	section img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	section table {
+		display: table;
+		max-width: 100%;
+		margin: 0 auto !important;
+	}
 ---
 
-# From Face Perception to Social Categorization: A Multidimensional Scaling Approach to Ethnic Outgroup Homogeneity in Childhood
+# Dai volti ai gruppi: una mappatura multidimensionale della rappresentazione percettiva dei gruppi sociali nell'infanzia
 
 Luca Cussigh, Luciana Carraro, Luigi Castelli
 
-<div align="center" style="margin-top: 72px; white-space: nowrap;">
+<div align="center" style="display: flex; justify-content: center; align-items: center; margin-top: 72px; white-space: nowrap;">
 	<img src="Images/Marchio_unipd2026.svg" alt="Università degli Studi di Padova" height="60">
 	&nbsp;&nbsp;
 	<img src="Images/logo-dpps_nobground.png" alt="Department of Developmental Psychology and Socialisation" height="60">
 </div>
 
 ---
-<!--
+
 "In 2023, Member States issued more than 3.7 million residence permits to non-EU
 citizens from more than 170 countries."
 
@@ -29,31 +54,13 @@ Social categorization changes how people perceive, evaluate, remember, and treat
 one another (Amodio & Cikara, 2021; Levy et al., 2023; Rhodes & Baron, 2019)
 
 ---
--->
-# The Outgroup Homogeneity Effect (OHE; Quattrone & Jones, 1981)
-Outgroup members appear more homogeneous to each other than ingroup members
-
-- Supported in adult populations
-
----
 
 # The Outgroup Homogeneity Effect
 
-**Early Emergence of Categorization vs. Childhood OHE Gap**
+**Early Emergence of Ingroup favoritism vs. Childhood OHE**
 
-- **Categorization in childhood:** Strong evidence for ingroup preferences and visual specialization for ingroup faces (Kelly et al., 2009; Quinn et al., 2016).
+- **Ingroup favoritism:** Strong evidence for ingroup preferences and visual specialization for ingroup faces (Kelly et al., 2009; Quinn et al., 2016).
 - **OHE in childhoood:** No consolidated evidence for the Outgroup Homogeneity Effect (OHE). Why?
-
----
-
-# A few structural obstacles
-1. Difficult not to employ explicit tasks (creating top-down categories)
-2. Most of the literature employs a dyadic paradigm (ingroup-outgroup)
-3. If visual paradigms are used, the stimuli selection is subject to biases
-
-<!-- Speaker Notes
-Decades of research show that infants display early visual specialization for ingroup faces, leading to the Perceptual-Social Linkage hypothesis. Yet, when we look at childhood, specifically ages 3 to 8, the evidence for the Outgroup Homogeneity Effect becomes inconsistent. We hypothesize that traditional tasks force children into rigid, explicit categories and may not capture how they spontaneously perceive social groups.
--->
 
 ---
 
@@ -77,7 +84,7 @@ Decades of research show that infants display early visual specialization for in
 
 - Morphologies controlled using an emotional filter and FaceNet embeddings to ensure similar perceptual distinctiveness across groups
 
-<div style="display: flex; justify-content: center;">
+<div align="center" class="centered-table">
 
 | African Descent | East-Asian | Italian | **Andean** |
 |:---:|:---:|:---:| :---:|
@@ -92,7 +99,7 @@ Decades of research show that infants display early visual specialization for in
 
 # The Face Similarity Task
 
-<div style="display: flex; justify-content: center;">
+<div align="center" class="centered-table">
 
 | **→** | **→** | **→** | 
 |:---:|:---:|:---:|
@@ -101,7 +108,6 @@ Decades of research show that infants display early visual specialization for in
 
 </div>
 
-
 ---
 
 # The Face Similarity Task
@@ -109,21 +115,33 @@ Decades of research show that infants display early visual specialization for in
 - Incomplete block design 
 - 66 random dyads presented sequentially (3 faces per group)
 
-<div style="display: flex; justify-content: center;">
+<div align="center" class="centered-table">
 
-| **Moderated (S1)** |
-|:---:|
-| <img src="Images/03_Heatmap_Females.png" alt="In-group" width="500" height="350"> |
+
+<img src="Images/03_Heatmap_Females.png" alt="In-group" width="500" height="350"> 
 
 </div>
 
 ---
 
-# Pre-registered studies: Method & Experimental Design
+# The Trait Attribution Task
+
+- 4 positive (Buoni, Belli, Simpatici, Puliti) and 6 negative (Cattivi, Brutti, Antipatici, Sporchi) traits
+- 5 possible triads
+
+<div align="center" class="centered-table">
+
+<img src="Images/TAT.png" alt="In-group" width="600" height="350"> 
+
+</div>
+
+
+---
+
+# Pre-registered Study
 
 **Sample:**
-- Study 1 (moderated, controlled school setting): N=249, M=5.17 years, SD=1.23, 134 boys (53.8%) and 115 girls (46.2%)
-- Study 2 (unmoderated, online setting): N=101, M = 6.06, SD=1.43, 52 girls (51.5%) and 49 boys (48.5%)
+-  N=249, M=5.17 years, SD=1.23, 134 boys (53.8%) and 115 girls (46.2%)
 - Age range: 3 to 8 years
 <!--
 ---
@@ -149,11 +167,9 @@ Decades of research show that infants display early visual specialization for in
 
 ---
 
-<div style="display: flex; justify-content: center;">
+<div align="center" class="centered-table">
 
-| **Moderated (S1)** |
-|:---:|
-| <img src="Images/Immagine5.png" alt="In-group" width="700" height="400"> |
+<img src="Images/Immagine5.png" alt="In-group" width="700" height="400">
 
 </div>
 
@@ -179,18 +195,16 @@ A critical question is whether these findings depend on the specific testing con
 
 ---
 
-- # Children spontaneously visually categorize stimuli in ethnic groups
+- # Children spontaneously visually categorized stimuli into ethnic groups
 
 ---
 # Outgroup Homogenity Effect
 
 - Ellipsoid's volume: 
 
-<div style="display: flex; justify-content: center;">
+<div align="center" class="centered-table">
 
-| **Moderated (S1)** |
-|:---:|
-| <img src="Images/Figure_Volume_3D_APA7.png" alt="In-group" width="500" height="350"> |
+<img src="Images/Figure_Volume_3D_APA7.png" alt="In-group" width="500" height="350">
 
 </div>
 
@@ -263,78 +277,54 @@ Regarding the Minority-Groups Homogeneity Effect, we found it wasn't supported e
 
 ---
 
-# Outgroup Homogenity Effect
+- # No support for OHE
 
-- Ellipsoid's volume: 
+---
 
-<div style="display: flex; justify-content: center;">
+# LMM - Developmental Trajectories
 
-| **Moderated (S1)** | **Unmoderated (S2)** | 
-|:---:|:---:|
-| <img src="Images/Figure_Volume_3D_APA7.png" alt="In-group" width="500" height="350"> | <img src="Images/06_Figure3_Volume_3D_APA7.png" alt="Outgroup Beans" width="500" height="350"> |
+---
 
+# LMM - Developmental Trajectories
+
+
+
+<div align="center" class="centered-table">
+
+<img src="Images/04_plot_interazione_macro_s1.png" alt="In-group" width="500" height="350">
 </div>
 
 ---
 
-# LMM - Developmental Trajectories
+- # Intergroup dissimilarity judgments increased with age
 
 ---
 
-# LMM - Developmental Trajectories
+# Ingroup favoritism
 
 
-
-<div style="display: flex; justify-content: center;">
+<div align="center" class="centered-table">
 
 | **Moderated (S1)** |
 |:---:|
-| <img src="Images/04_plot_interazione_macro_s1.png" alt="In-group" width="500" height="350"> |
+| <img src="Images/04_plot_slopes_interaction.png" alt="In-group" width="500" height="350"> |
 </div>
 
 ---
 
-# LMM - Developmental Trajectories
-
-<div style="display: flex; justify-content: center;">
-
-| **Moderated (S1)** | **Unmoderated (S2)** | 
-|:---:|:---:|
-| <img src="Images/04_plot_interazione_macro_s1.png" alt="In-group" height="260"> | <img src="Images/plot_interazione_h1c.png" alt="Outgroup Beans" height="260"> |
-
-</div>
-
-<div style="width: 100%; margin-top: 4px; text-align: center;">
-<table style="display: inline-table; width: 82%; margin: 0; font-size: 0.50em; line-height: 1.1; text-align: center; border-collapse: collapse;">
-	<thead>
-		<tr>
-			<th style="padding: 3px 8px;">Dyad type</th>
-			<th style="padding: 3px 8px;"><em>b (S1)</em></th>
-			<th style="padding: 3px 8px;">95% CI (S1)</th>
-			<th style="padding: 3px 8px;"><em>b (S2)</em></th>
-			<th style="padding: 3px 8px;">95% CI (S2)</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr><td style="padding: 3px 8px;">In-Out</td><td style="padding: 3px 8px;">0.06</td><td style="padding: 3px 8px;">0.02, 0.11</td><td style="padding: 3px 8px;">0.07</td><td style="padding: 3px 8px;">0.02, 0.12</td></tr>
-		<tr><td style="padding: 3px 8px;">Out1-Out2</td><td style="padding: 3px 8px;">0.08</td><td style="padding: 3px 8px;">0.04, 0.12</td><td style="padding: 3px 8px;">0.07</td><td style="padding: 3px 8px;">0.02, 0.12</td></tr>
-		<tr><td style="padding: 3px 8px;">In-In</td><td style="padding: 3px 8px;">0.01</td><td style="padding: 3px 8px;">-0.06, 0.08</td><td style="padding: 3px 8px;">-0.10</td><td style="padding: 3px 8px;">-0.18, -0.02</td></tr>
-		<tr><td style="padding: 3px 8px;">Out-Out</td><td style="padding: 3px 8px;">-0.04</td><td style="padding: 3px 8px;">-0.09, 0.01</td><td style="padding: 3px 8px;">-0.05</td><td style="padding: 3px 8px;">-0.10, 0.01</td></tr>
-	</tbody>
-</table>
-</div>
+- # Support for ingroup favoritism
 
 ---
 
-- # Intergroup similarity judgments increased with age
+# Conclusions
 
----
+- ## Children spontaneously visually categorize stimuli into ethnic groups
 
-# Conclusion
+- ## No support for OHE
 
-- ## Children spontaneously visually categorize stimuli in ethnic groups
+- ## Intergroup dissimilarity judgments might increase with age
 
-- ## Intergroup similarity judgments increased with age
+- ## Ingroup favoritism supported
 
 <!-- Speaker Notes
 When we tracked children across ages 3 to 8, a developmental pattern emerged. As children got older, faces from different groups seemed more dissimilar to them—the distances between intergroup dyads increased. For within-group pairs, we saw some evidence that ingroup faces became more tightly clustered with age, especially in Study 2, suggesting that children develop a more refined, consolidated representation of their own group's appearance. This developmental trajectory aligns with theories of perceptual expertise—as children become more experienced with faces, they become better at extracting the features that distinguish one group from another.
@@ -365,6 +355,16 @@ When we tracked children across ages 3 to 8, a developmental pattern emerged. As
  Speaker Notes
 To wrap up: Our results paint a more nuanced picture of how children perceive ethnic diversity. The classic Outgroup Homogeneity Effect and Minority-Groups Homogeneity Effect didn't emerge as predicted. Instead, children's perceptions are guided by the actual visual features of faces and organized according to face-space principles. Importantly, we see developmental changes—older children distinguish between groups more finely. Of course, our work has limitations: we haven't directly measured threat perception or cultural factors that might moderate these effects. But looking forward, this research opens new doors. Understanding the perceptual foundations of social categorization could inform school-based interventions that leverage face-space similarity principles. By helping children develop more individuated, less stereotypical representations of outgroup members—what researchers call "personalization"—we might reduce intergroup bias from the ground up. Thank you.
 -->
+
+---
+
+# Future directions
+
+- Individual differences: Exploring how child-level factors (e.g., social contact, intergroup attitudes) shape perceptual dispersion.
+
+- Task & contextual effects: Investigating whether the number and composition of groups alter face-space geometry.
+
+- Longitudinal trajectories: Tracking individual shifts in categorization and outgroup perceptual boundaries over time.
 
 ---
 
