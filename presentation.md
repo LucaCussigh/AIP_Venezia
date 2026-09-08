@@ -143,8 +143,10 @@ one another (Amodio & Cikara, 2021; Levy et al., 2023; Rhodes & Baron, 2019)
 **Sample:**
 -  N=249, M=5.17 years, SD=1.23, 134 boys (53.8%) and 115 girls (46.2%)
 - Age range: 3 to 8 years
+
 <!--
 ---
+
 
 # Pre-registered studies: Method & Experimental Design
 
@@ -305,9 +307,7 @@ Regarding the Minority-Groups Homogeneity Effect, we found it wasn't supported e
 
 <div align="center" class="centered-table">
 
-| **Moderated (S1)** |
-|:---:|
-| <img src="Images/04_plot_slopes_interaction.png" alt="In-group" width="500" height="350"> |
+<img src="Images/04_plot_slopes_interaction.png" alt="In-group" width="500" height="350">
 </div>
 
 ---
@@ -374,6 +374,6 @@ To wrap up: Our results paint a more nuanced picture of how children perceive et
 
 <div align="center">
 
-<img src="Images/qr_code.png" alt="Minority-groups homogeneity effect" width="700">
+<img src="Images/QRcode_Pisa.png" alt="Minority-groups homogeneity effect" width="650">
 
 </div>
