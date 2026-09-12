@@ -2,7 +2,6 @@
 marp: true
 html: true
 title: Dai volti ai gruppi: una mappatura multidimensionale della rappresentazione percettiva dei gruppi sociali nell'infanzia
-
 style: |
 	section .centered-table {
 		display: block;
@@ -12,16 +11,13 @@ style: |
 	section .centered-table > table {
 		display: table !important;
 		width: auto !important;
-		max-width: 100%;
-		margin-left: 50% !important;
-		margin-right: 0 !important;
 		transform: translateX(-50%);
 	}
-	section img {
+	- Ellipsoid's volume:
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-	}
+	| **Moderated (S1)** | **Unmoderated (S2)** |
 	section table {
 		display: table;
 		max-width: 100%;
@@ -64,6 +60,17 @@ one another (Amodio & Cikara, 2021; Levy et al., 2023; Rhodes & Baron, 2019)
 
 ---
 
+# A few structural obstacles
+1. Difficult not to employ explicit tasks (creating top-down categories)
+2. Most of the literature employs a dyadic paradigm (ingroup-outgroup) due to the difficulty of creating multigroup contexts
+3. If visual paradigms are used, the stimuli selection is subject to biases
+
+<!-- Speaker Notes
+Decades of research show that infants display early visual specialization for ingroup faces, leading to the Perceptual-Social Linkage hypothesis. Yet, when we look at childhood, specifically ages 3 to 8, the evidence for the Outgroup Homogeneity Effect becomes inconsistent. We hypothesize that traditional tasks force children into rigid, explicit categories and may not capture how they spontaneously perceive social groups.
+-->
+
+---
+
 # 1. Spontaneous bottom-up categorization
 
 **Multidimensional Scaling (MDS)**
@@ -97,9 +104,6 @@ one another (Amodio & Cikara, 2021; Levy et al., 2023; Rhodes & Baron, 2019)
 
 ---
 
-# The Face Similarity Task
-
-<div align="center" class="centered-table">
 
 | **→** | **→** | **→** | 
 |:---:|:---:|:---:|
@@ -276,6 +280,20 @@ When we mapped the faces in a 3D perceptual space, we found something surprising
 <!-- Speaker Notes
 Regarding the Minority-Groups Homogeneity Effect, we found it wasn't supported either. The African Descent group, for instance, was perceptually quite distant from both East Asian and Andean groups—they didn't cluster together as a unified "outgroup." This tells us that children are sensitive to the specific perceptual characteristics of each ethnic group and don't collapse multiple outgroups into a homogeneous "other." The multigroup perceptual space is richer and more nuanced than traditional categorization models suggest.
 -->
+
+---
+
+# Outgroup Homogenity Effect
+
+- Ellipsoid's volume:
+
+<div align="center" class="centered-table">
+
+| **Moderated (S1)** | **Unmoderated (S2)** |
+|:---:|:---:|
+| <img src="Images/Figure_Volume_3D_APA7.png" alt="In-group" width="500" height="350"> | <img src="Images/06_Figure3_Volume_3D_APA7.png" alt="Outgroup Beans" width="500" height="350"> |
+
+</div>
 
 ---
 
